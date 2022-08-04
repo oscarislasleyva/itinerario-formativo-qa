@@ -31,7 +31,7 @@
     - [Appium](#appium)
     - [Espresso](#espresso)
     - [XCUITest](#xcuitest)
-  - [Herramientas para pruebas de carga/rendimiento](#herramientas-para-pruebas-de-carga%2Frendimiento)
+  - [Herramientas para pruebas de carga](#herramientas-para-pruebas-de-carga)
     - [JMeter](#jmeter)
     - [Gatling](#gatling)
     - [LoadRunner](#loadrunner)
@@ -269,7 +269,7 @@ El soporte principal de Appium para automatizar aplicaciones iOS es a través de
 
 [Tutorial XCUITest](https://www.adictosaltrabajo.com/2019/02/28/empezando-con-xcode-ui-testing/)  
 
-### Herramientas para pruebas de carga/rendimiento
+### Herramientas para pruebas de carga
 
 #### JMeter
 

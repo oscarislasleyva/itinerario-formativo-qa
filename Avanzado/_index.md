@@ -24,6 +24,11 @@
   - [Helm](#helm)
   - [Jenkins](#jenkins)
   - [Pact](#pact)
+  - [Herramientas para pruebas de seguridad](#herramientas-para-pruebas-de-seguridad)
+    - [Metasploit](#%5Bmetasploit%5D%28https%3A%2F%2Fwww.metasploit.com%2F%29)
+    - [Acunetix Web Vulnerability Scanner](#%5Bacunetix-web-vulnerability-scanner%5D%28https%3A%2F%2Fwww.acunetix.com%2Fweb-vulnerability-scanner%2F%29)
+    - [OWASP ZAP (abr. para Zed Attack Proxy)](#%5Bowasp-zap-%28abr.-para-zed-attack-proxy%29%5D%28https%3A%2F%2Fowasp.org%2Fwww-project-zap%2F%29)
+    - [Wireshark](#%5Bwireshark%5D%28https%3A%2F%2Fwww.wireshark.org%2F%29)
 - [Ejercicios](#ejercicios)
   - [Instalación y monitorización de un cluster de Kubernetes](#instalaci%C3%B3n-y-monitorizaci%C3%B3n-de-un-cluster-de-kubernetes)
   - [Jenkins y Sonar](#jenkins-y-sonar)
@@ -175,32 +180,6 @@ Validan los servicios de seguridad de una aplicación e identifican posibles fal
 
 Muchos proyectos utilizan un enfoque de caja negra para las pruebas de seguridad, lo que permite a los expertos, sin conocimiento del software, probar la aplicación en busca de agujeros, fallos, exploit y debilidades.
 
-Hay que destacar las pruebas de penetración y las pruebas de auditoría, son los dos tipos más destacados.
-
-[+ info](https://iicybersecurity.wordpress.com/tag/pruebas-de-seguridad-de-software/) y [video explicativo](https://www.youtube.com/watch?v=o7LmA4V62aE) sobre pruebas de seguridad.
-
-Las herramientas más usadas son:
-
-- **[Metasploit](https://www.metasploit.com/):** es un proyecto de código abierto para la seguridad informática, que proporciona información acerca de vulnerabilidades de seguridad y ayuda en tests de penetración "Pentesting" y el desarrollo de firmas para sistemas de detección de intrusos.
-
-    Su subproyecto más conocido es el ***Metasploit Framework***, una herramienta para desarrollar y ejecutar exploits contra una máquina remota. Otros subproyectos importantes son las bases de datos de opcodes (códigos de operación), un archivo de shellcodes, e investigación sobre seguridad. Inicialmente fue creado utilizando el lenguaje de programación de scripting *Perl* aunque actualmente el Metasploit Framework ha sido escrito de nuevo completamente en el lenguaje Ruby.
-
-- **[Acunetix Web Vulnerability Scanner](https://www.acunetix.com/web-vulnerability-scanner/):** es una herramienta que será capaz de escanear sitios web en busca de posibles fallos de seguridad que puedan poner en peligro la integridad de la página publicada en Internet. Esta aplicación ejecuta una serie de pruebas, totalmente configurables por el usuario, para identificar las vulnerabilidades tanto en la programación de la página como en la configuración del servidor
-
-- **[OWASP ZAP (abr. para Zed Attack Proxy)](https://owasp.org/www-project-zap/):** es un escáner de seguridad web de código abierto. Pretende ser utilizado como una aplicación de seguridad y como una herramienta profesional para pruebas de penetración.
-
-    Cuándo se usa como servidor proxy permite a los usuarios manipular todo el tráfico que pasa a través de este, incluyendo el tráfico del protocolo seguro HTTPS. La aplicación puede desplegarse en modo demonio que es controlado mediante API REST.
-
-    Esta herramientas es multiplataforma, pues se ha escrito en Java y está disponible en sistemas tales como Windows, Linux y macOS.
-
-- **[Wireshark](https://www.wireshark.org/):** es un analizador de protocolos utilizado para realizar análisis y solucionar problemas en redes de comunicaciones, para desarrollo de software y protocolos, y como una herramienta didáctica. Cuenta con todas las características estándar de un analizador de protocolos.
-
-    La funcionalidad que provee es similar a la de *tcpdump*, pero añade una interfaz gráfica y muchas opciones de organización y filtrado de información. Así, permite ver todo el tráfico que pasa a través de una red (usualmente una red Ethernet, aunque es compatible con algunas otras) estableciendo la configuración en modo promiscuo.
-
-    Permite examinar datos de un archivo de captura salvado en disco. Se puede analizar la información capturada, a través de los detalles y cabeceras de cada paquete. Wireshark incluye un completo lenguaje para filtrar lo que queremos ver y la habilidad de mostrar el flujo reconstruido de una sesión de TCP.
-
-    Es software libre y se ejecuta sobre la mayoría de sistemas operativos Unix y compatibles, incluyendo Linux, Solaris, FreeBSD, NetBSD, OpenBSD, Android, y macOS , así como en Microsoft Windows.
-
 ### Mutation Testing
 
 La técnica consiste en modificar el código de nuestras implementaciones de forma automática para detectar si las pruebas que hemos realizado identifican cambios y actúan en consecuencia.
@@ -276,6 +255,36 @@ Esta herramienta tiene disponibles cientos de [plugins](https://plugins.jenkins.
 Es una herramienta de *contract testing* que nos permite probar la mensajería entre aplicaciones (por ejemplo, solicitudes y respuestas HTTP, o mensajes enviados a través de una cola). Esto significa que cada aplicación puede probarse de forma independiente, lo que mejora significativamente el flujo de trabajo de desarrollo y el tiempo de prueba.
 
 [+ info](https://pactflow.io/how-pact-works/?utm_source=ossdocs&utm_campaign=getting_started#slide-1)
+
+### Herramientas para pruebas de seguridad
+
+#### [Metasploit](https://www.metasploit.com/)
+
+Es un proyecto de código abierto para la seguridad informática, que proporciona información acerca de vulnerabilidades de seguridad y ayuda en tests de penetración "Pentesting" y el desarrollo de firmas para sistemas de detección de intrusos.
+
+Su subproyecto más conocido es el ***Metasploit Framework***, una herramienta para desarrollar y ejecutar exploits contra una máquina remota. Otros subproyectos importantes son las bases de datos de opcodes (códigos de operación), un archivo de shellcodes, e investigación sobre seguridad. Inicialmente fue creado utilizando el lenguaje de programación de scripting *Perl* aunque actualmente el Metasploit Framework ha sido escrito de nuevo completamente en el lenguaje Ruby.
+
+#### [Acunetix Web Vulnerability Scanner](https://www.acunetix.com/web-vulnerability-scanner/)
+
+Es una herramienta que será capaz de escanear sitios web en busca de posibles fallos de seguridad que puedan poner en peligro la integridad de la página publicada en Internet. Esta aplicación ejecuta una serie de pruebas, totalmente configurables por el usuario, para identificar las vulnerabilidades tanto en la programación de la página como en la configuración del servidor
+
+#### [OWASP ZAP (abr. para Zed Attack Proxy)](https://owasp.org/www-project-zap/)
+
+Es un escáner de seguridad web de código abierto. Pretende ser utilizado como una aplicación de seguridad y como una herramienta profesional para pruebas de penetración.
+
+Cuándo se usa como servidor proxy permite a los usuarios manipular todo el tráfico que pasa a través de este, incluyendo el tráfico del protocolo seguro HTTPS. La aplicación puede desplegarse en modo demonio que es controlado mediante API REST.
+
+Esta herramientas es multiplataforma, pues se ha escrito en Java y está disponible en sistemas tales como Windows, Linux y macOS.
+
+#### [Wireshark](https://www.wireshark.org/)
+
+Es un analizador de protocolos utilizado para realizar análisis y solucionar problemas en redes de comunicaciones, para desarrollo de software y protocolos, y como una herramienta didáctica. Cuenta con todas las características estándar de un analizador de protocolos.
+
+La funcionalidad que provee es similar a la de *tcpdump*, pero añade una interfaz gráfica y muchas opciones de organización y filtrado de información. Así, permite ver todo el tráfico que pasa a través de una red (usualmente una red Ethernet, aunque es compatible con algunas otras) estableciendo la configuración en modo promiscuo.
+
+Permite examinar datos de un archivo de captura salvado en disco. Se puede analizar la información capturada, a través de los detalles y cabeceras de cada paquete. Wireshark incluye un completo lenguaje para filtrar lo que queremos ver y la habilidad de mostrar el flujo reconstruido de una sesión de TCP.
+
+Es software libre y se ejecuta sobre la mayoría de sistemas operativos Unix y compatibles, incluyendo Linux, Solaris, FreeBSD, NetBSD, OpenBSD, Android, y macOS , así como en Microsoft Windows.
 
 ---
 
