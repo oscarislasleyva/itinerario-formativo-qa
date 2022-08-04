@@ -93,7 +93,7 @@ Estos son los principios que formarían la base del **buen** testing, en contrap
 
 #### Definición Agile Testing
 
-Es una práctica de testing qeu sigue las reglas y principios del desarrollo ágil de software. A diferencia del método Waterfall, el Agile Testing puede comenzar al principio del proyecto con una integración continua entre el desarrollo y el testing. Al igual que el desarrollo ágil, las pruebas ágiles son un proceso colaborativo y orientado al equipo, por ello, todos los miembros del equipo comparten la responsabilidad de probar el sistema.
+Es una práctica de testing que sigue las reglas y principios del desarrollo ágil de software. A diferencia del método Waterfall, el Agile Testing puede comenzar al principio del proyecto con una integración continua entre el desarrollo y el testing. Al igual que el desarrollo ágil, las pruebas ágiles son un proceso colaborativo y orientado al equipo, por ello, todos los miembros del equipo comparten la responsabilidad de probar el sistema.
 
 [+ info](https://www.guru99.com/agile-testing-a-beginner-s-guide.html)
 
@@ -109,7 +109,7 @@ Lo más habitual ha sido que las pruebas se ejecutasen al final del proceso de c
 
 Esta manera de proceder lleva a que la función del tester sea la de reportar bugs, puesto que las pruebas han quedado relegadas al final del proceso (a la derecha del todo). El enfoque "shift-left" apuesta por la implantación del testing lo antes posible dentro del ciclo de vida del proyecto (a la izquierda).
 
-La idea detrás de este principio es que no es necesario esperar a tener partes del software construidas para reportar errores funcionales, de diseño, UX, de procedimiento, de cumplimiento de leyes, seguridad, estándares, etc. Es por esto que con este enfoque pasaríamos de un modelo de **reportar bugs** a otro de **prevenirlos**, algo obviamente mucho más interesantes y efectivo.
+La idea detrás de este principio es que no es necesario esperar a tener partes del software construidas para reportar errores funcionales, de diseño, UX, de procedimiento, de cumplimiento de leyes, seguridad, estándares, etc. Es por esto que con este enfoque pasaríamos de un modelo de **reportar bugs** a otro de **prevenirlos**, algo obviamente mucho más interesante y efectivo.
 
 [+ info](https://www.federico-toledo.com/que-es-shift-left-testing/)
 

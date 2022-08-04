@@ -509,7 +509,7 @@ Realizar las queries usando la consola desde dentro del contenedor y crear un do
 
 [Web element locator strategies](https://testautomationu.applitools.com/web-element-locator-strategies/) - Como interactuar con botones, etiquetas, dropdowns y demás elementos de una web usando diferentes técnicas como xpath o id.
 
-[Testing Angular apps](https://sngular.udemy.com/course/testing-angular-apps/learn/lecture/7052082#overview) - Como testar aplicaciomnes Angular usando la librería Jasmine.
+[Testing Angular apps](https://sngular.udemy.com/course/testing-angular-apps/learn/lecture/7052082#overview) - Como testar aplicaciones Angular usando la librería Jasmine.
 
 [AngularJS Protractor tutorial](https://sngular.udemy.com/course/angularjs-protractor-tutorial/) - Aprende a escribir pruebas end2end sobre aplicaciones AngularJS usando Protractor. También puede ser usado para aplicaciones que no están implementadas con AngularJS. También aprenderás como localizar elementos y a usar promesas en tus tests.
 
