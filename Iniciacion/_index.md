@@ -30,7 +30,6 @@
   - [Depurar con JavaScript en Chrome DevTools](#depurar-con-javascript-en-chrome-devtools)
   - [Redactar plan de pruebas](#redactar-plan-de-pruebas)
   - [Sesión testing exploratorio](#sesi%C3%B3n-testing-exploratorio)
-  - [Automatización con IDE Katalon Studio](#automatizaci%C3%B3n-con-ide-katalon-studio)
   - [Carga de datos en una web con JMeter](#carga-de-datos-en-una-web-con-jmeter)
   - [Katas utilizando TDD](#katas-utilizando-tdd)
 - [Recursos de aprendizaje](#recursos-de-aprendizaje)
@@ -350,27 +349,6 @@ Realizar una batería de pruebas con SoapUI para peticiones REST.
 - Recopila bugs, ideas, problemas y posibles mejoras.
 - Realiza dichas pruebas en varios navegadores. (Chrome, Firefox y otro más)
 - Realiza algunas pruebas exploratorias en la versión responsive.
-
-### Automatización con IDE Katalon Studio
-
-> :bookmark: **Nota**
->
-> Usa la [web de pruebas](https://the-internet.herokuapp.com/) con **Katalon Studio** y analiza sus resultados.
->
-
-*Pasos previos:*
-
-- Descargar e instalar [Katalon Studio 7](https://www.katalon.com/), según tu sistema operativo.
-- Descargar e instalar Google Chrome y Firefox. Requisito necesario para ejecutar las pruebas en ambos navegadores.
-
-*Realiza las siguientes pruebas:*
-
-- Add/Remove Elements
-- Basic Auth
-- Drag and drop
-- Dropdown
-- Hovers
-- Multiple Windows
 
 ### Carga de datos en una web con JMeter
 

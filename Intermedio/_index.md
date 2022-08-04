@@ -18,22 +18,31 @@
   - [Pruebas de rendimiento](#pruebas-de-rendimiento)
 - [Herramientas](#herramientas)
   - [Frameworks para hacer mocking](#frameworks-para-hacer-mocking)
-  - [RestAssured](#restassured)
-  - [KarateDSL](#karatedsl)
-  - [Selenium](#selenium)
-  - [Cypress](#cypress)
-  - [Protractor](#protractor)
-  - [Appium](#appium)
-  - [Espresso](#espresso)
-  - [XCUITest](#xcuitest)
-  - [Cucumber](#cucumber)
-  - [Gauge](#gauge)
-  - [SonarQube](#sonarqube)
-  - [JMeter](#jmeter)
-  - [Gatling](#gatling)
-  - [LoadRunner](#loadrunner)
-  - [NeoLoad](#neoload)
-  - [Taurus](#taurus)
+  - [Herramientas para pruebas de backend](#herramientas-para-pruebas-de-backend)
+    - [RestAssured](#restassured)
+    - [KarateDSL](#karatedsl)
+  - [Herramientas para pruebas web (e2e)](#herramientas-para-pruebas-web-%28e2e%29)
+    - [Selenium](#selenium)
+    - [Cypress](#cypress)
+    - [TestCafé](#testcaf%C3%A9)
+    - [Playwright](#playwright)
+    - [Protractor (Deprecada)](#protractor-%28deprecada%29)
+  - [Herramientas para pruebas de móviles](#herramientas-para-pruebas-de-m%C3%B3viles)
+    - [Appium](#appium)
+    - [Espresso](#espresso)
+    - [XCUITest](#xcuitest)
+  - [Herramientas para pruebas de carga/rendimiento](#herramientas-para-pruebas-de-carga%2Frendimiento)
+    - [JMeter](#jmeter)
+    - [Gatling](#gatling)
+    - [LoadRunner](#loadrunner)
+    - [NeoLoad](#neoload)
+    - [Taurus](#taurus)
+    - [K6](#k6)
+  - [Otras herramientas](#otras-herramientas)
+    - [Cucumber](#cucumber)
+    - [Gauge](#gauge)
+    - [SonarQube](#sonarqube)
+    - [BrowserStack](#browserstack)
 - [Ejercicios](#ejercicios)
   - [Pruebas End-2-End de Front](#pruebas-end-2-end-de-front)
   - [Pruebas API REST con Postman](#pruebas-api-rest-con-postman)
@@ -42,7 +51,6 @@
   - [Pruebas de rendimiento con JMeter sobre API REST](#pruebas-de-rendimiento-con-jmeter-sobre-api-rest)
   - [Pruebas de rendimiento con JMeter sobre aplicación web](#pruebas-de-rendimiento-con-jmeter-sobre-aplicaci%C3%B3n-web)
   - [Pruebas sobre aplicación móvil usando Appium](#pruebas-sobre-aplicaci%C3%B3n-m%C3%B3vil-usando-appium)
-  - [Pruebas sobre aplicación móvil usando Katalon](#pruebas-sobre-aplicaci%C3%B3n-m%C3%B3vil-usando-katalon)
   - [Ejercicio práctico base de datos MongoDB](#ejercicio-pr%C3%A1ctico-base-de-datos-mongodb)
   - [Ejercicio práctico base de datos MySQL](#ejercicio-pr%C3%A1ctico-base-de-datos-mysql)
   - [Análisis código estático con SonarQube](#an%C3%A1lisis-c%C3%B3digo-est%C3%A1tico-con-sonarqube)
@@ -187,7 +195,9 @@ Nos permiten simular comportamientos dentro de nuestras pruebas unitarias. Vamos
 - [Javascript - Jest](https://medium.com/canariasjs/jest-manual-mocking-con-m%C3%B3dulos-propios-fuera-del-archivo-de-testing-9bdc3767088d)
 - [Python - Pytest](https://medium.com/@bfortuner/python-unit-testing-with-pytest-and-mock-197499c4623c)
 
-### RestAssured
+### Herramientas para pruebas de backend
+
+#### RestAssured
 
 Framework para testear y validar servicios rest en java. Al igual que Postman o SoapUI, RestAssured es una herramienta para el testing de servicios REST. En este caso es necesario, tener conocimientos en Java, ya que se trata de una librería que nos proporciona lo necesario para hacer peticiones.
 
@@ -195,37 +205,53 @@ Framework para testear y validar servicios rest en java. Al igual que Postman o 
 
 [+ info](https://www.genbeta.com/desarrollo/rest-assured-framework-para-testear-y-validar-nuestros-servicios-rest)  
 
-### KarateDSL
+#### KarateDSL
 
 En el caso de KarateDSL, es una herramienta de código abierto que nos permite escribir tests donde se realizan peticiones HTTP y se comprueban que la respuesta es la esperada. En su core tiene todo lo necesario y no tenemos que crear nuevos steps, además se apoya en Cucumber para escribir nuestras pruebas en un lenguaje pseudo técnico donde podemos aplicar un enfoque de desarrollo guiado por comportamiento (BDD).
 
 [Web oficial](https://github.com/intuit/karate)
 
-### Selenium
+### Herramientas para pruebas web (e2e)
+
+#### Selenium
 
 Selenium es posiblemente la herramienta más extendida en la automatización de pruebas. En su versión WebDriver, el sucesor del original Selenium RC, acepta comandos y los envía a un navegador. Es usado para automatizar pruebas e2e sobre aplicaciones web, simulando las acciones que un usuario hace en la aplicación.
 
 [Web oficial](https://selenium.dev/)  
 
-### Cypress
+#### Cypress
 
 Cypress es una herramienta de testing construida para la web moderna y que no usa Selenium para controlar el navegador. Nos permite escribir todo tipo de tests: e2e, de integración, unitarios, etc. Esta herramienta está diseñada especialmente para manejar frameworks de JavaScript modernos, *React, Angular, Vue, Elm, etc.* Pero, también funciona igual de bien en páginas o aplicaciones renderizadas en servidor.
 
-[Web oficial](https://www.cypress.io)  
+[Web oficial](https://www.cypress.io)
 
-### Protractor
+#### TestCafé
+
+TestCafé es una herramienta de node.js para probar aplicaciones web. No necesita complementos para el navegador y funciona en todos los navegadores modernos.
+
+[Web oficial](https://testcafe.io/)
+
+#### Playwright
+
+Playwright es una biblioteca de node.js para automatizar pruebas e2e en los principales navegadores del mercado. También permite realizar pruebas en los navegadores de dispositivos móviles. Soporta varios lenguajes de programación (TypeScript, JavaScript, Python, .NET y JAVA)
+
+[Web oficial](https://playwright.dev/)
+
+#### Protractor (Deprecada)
 
 Protractor utiliza WebDriver para controlar el navegador y está escrita en NodeJS. Se utiliza el lenguaje JavaScript para escribir los test. Se trata de un framework para pruebas e2e sobre aplicaciones escritas en AngularJS, aunque no está limitado solo a este framework en particular.
 
 [Web oficial](https://www.protractortest.org/#/)
 
-### Appium
+### Herramientas para pruebas de móviles
+
+#### Appium
 
 Appium es un framework open source que nos permite automatizar pruebas de aplicaciones móviles. Pueden ser aplicaciones nativas, web mobile o aplicaciones híbridas. Implementa Selenium WebDriver.
 
 [Web oficial](http://appium.io/)  
 
-### Espresso
+#### Espresso
 
 Espresso por su parte fue desarrollada por Google. Permite instalar el fichero APK en los dispositivos donde se van a realizar las pruebas y tener acceso al código. Ofrece un modo síncrono de ejecución, aumentando la estabilidad de los tests mediante un mecanismo que comprueba antes de pasar al siguiente paso que el elemento con el que se va a interactuar está en la pantalla. Con respecto a Appium, las ejecuciones de los tests son mucho más rápidas. Se ejecutan directamente en la aplicación instalada en el dispositivo sin necesidad de un servidor de comunicación como funciona Appium. Además de todo eso, Espresso nos permite usar mocks e inyección de depedencias.
 
@@ -235,7 +261,7 @@ Espresso por su parte fue desarrollada por Google. Permite instalar el fichero A
 
 [Espresso android tutorial](https://www.youtube.com/watch?v=KZeU3tOKHp0)  
 
-### XCUITest
+#### XCUITest
 
 El soporte principal de Appium para automatizar aplicaciones iOS es a través del driver XCUITest. Se utiliza para realizar pruebas de interfaz de usuario para apps IOS.
 
@@ -243,21 +269,67 @@ El soporte principal de Appium para automatizar aplicaciones iOS es a través de
 
 [Tutorial XCUITest](https://www.adictosaltrabajo.com/2019/02/28/empezando-con-xcode-ui-testing/)  
 
-### Cucumber
+### Herramientas para pruebas de carga/rendimiento
+
+#### JMeter
+
+Es una herramienta de código abierto para analizar y medir una variedad de servicios, con énfasis en aplicaciones web. Además, se puede usar para realizar pruebas unitarias para conexiones de base de datos JDBC, FTO, LDAP, servicios web, JMS, HTTP y conexiones TCP genéricas. Recomendable para perfiles menos técnicos.
+
+[Web oficial](http://jmeter.apache.org/)
+
+#### Gatling
+
+Es un marco de prueba de carga y rendimiento de código abierto. Su uso es para analizar y medir una variedad de servicios web. Recomendable para perfiles más técnicos.
+
+[Web oficial](https://gatling.io/)
+
+[Gatling vs Jmeter](https://flood.io/blog/when-should-i-use-gatling-vs-jmeter-a-tale-of-two-tools/)
+
+#### LoadRunner
+
+Se utiliza para probar aplicaciones, medir el comportamiento del sistema y el rendimiento bajo carga. Es una herramienta multiprotocolo, multilenguaje y no openSource.
+
+[Web oficial](https://www.microfocus.com/es-es/products/loadrunner-professional/overview)
+
+#### NeoLoad
+
+Es una de las plataformas de prueba de rendimiento más innovadoras. Está desarrollada para automatizar el diseño, el mantenimiento y el análisis de pruebas para cumplir con los nuevos requisitos de las pruebas de carga Agile y DevOps. NeoLoad se integra con pipelines de CD, para soportar pruebas continuas de rendimiento de pruebas de componentes, pruebas de API, pruebas de preproducción y pruebas de carga de todo el sistema.
+
+[Web oficial](https://www.neotys.com/)
+
+[NeoLoad Demos](https://www.youtube.com/watch?v=x-pH5S9r9-o&list=PLdITSV_zl58pQo7rztV2j5Ccs7kEA1GPE)
+
+#### Taurus
+
+Herramienta gratuita y de código abierto. Taurus amplía las capacidades de los populares marcos de pruebas funcionales y de rendimiento como JMeter, Gatling o Selenium. También es fácil de usar para la configuración, ejecución y análisis de resultados de pruebas.
+
+[Web oficial](https://gettaurus.org/)
+
+[+ info](https://www.blazemeter.com/blog/taurus-new-star-test-automation-tools-constellation/)
+
+#### K6
+
+Grafana K6 es una herramienta de pruebas de carga de código libre que facilita el testeo del rendimiento de las aplicaciones. Con esta herramienta se puede probar la fiabilidad y rendimiento de aplicaciones e identificar regresiones y errores más tempranamente.
+
+[Web oficial](https://k6.io/docs/es/)
+
+### Otras herramientas
+
+#### Cucumber
 
 Cucumber es una herramienta que nos permite escribir los tests usando el lenguaje natural, de forma que todas las personas del proyecto, ya sean técnicas o no, puedan entenderlos. Se utiliza en un modelo de desarrollo de software con metodología BDD (Desarrollo guiado por comportamiento) con ayuda del patrón Given-When-Then.
 
 [Web oficial](https://cucumber.io/docs/cucumber/)
 
-### Gauge
+#### Gauge
 
 Gauge es una herramienta ligera de automatización de pruebas multiplataforma. Utiliza Markdown para crear casos de prueba y escenarios. Su arquitectura modular lo hace flexible y escalable.
 
 [Web oficial](https://docs.gauge.org/index.html)
 
-### SonarQube
+#### SonarQube
 
-Nos permite realizar un análisis estático de código fuente con el fin de obtener métricas que ayuden a mejorar la calidad del código.
+SonarQube es una herramienta que nos permite realizar un análisis estático de código fuente con el fin de obtener métricas que ayuden a mejorar la calidad del código.
 
 Algunos de los puntos que podemos detectar son: código duplicado, código que no se utiliza o la complejidad ciclomática que no es más que el cálculo del número de caminos independientes que tiene nuestro código.
 
@@ -267,41 +339,13 @@ Algunos de los puntos que podemos detectar son: código duplicado, código que n
 
 [Más conceptos sobre terminos de SonarQube](https://www.paradigmadigital.com/dev/evalua-la-calidad-de-tu-codigo-con-sonarqube/)
 
-### JMeter
+#### BrowserStack
 
-Es una herramienta de código abierto para analizar y medir una variedad de servicios, con énfasis en aplicaciones web. Además, se puede usar para realizar pruebas unitarias para conexiones de base de datos JDBC, FTO, LDAP, servicios web, JMS, HTTP y conexiones TCP genéricas. Recomendable para perfiles menos técnicos.
+BrowserStack es una plataforma de pruebas multinavegador que permite integrar herramientas para realizar pruebas automáticas, visuales y en vivo en aplicaciones móviles y webs.
 
-[Web oficial](http://jmeter.apache.org/)
+Los usuarios pueden escoger entre infinidad de dispositivos móviles, navegadores, sistemas operativos y confiar en una infraestructura segura, fiable y escalable para soportar miles de tests manuales y automáticos de forma concurrente reduciendo el tiempo, el coste y el mantenimiento asociado al proceso de pruebas.
 
-### Gatling
-
-Es un marco de prueba de carga y rendimiento de código abierto. Su uso es para analizar y medir una variedad de servicios web. Recomendable para perfiles más técnicos.
-
-[Web oficial](https://gatling.io/)
-
-[Gatling vs Jmeter](https://flood.io/blog/when-should-i-use-gatling-vs-jmeter-a-tale-of-two-tools/)
-
-### LoadRunner
-
-Se utiliza para probar aplicaciones, medir el comportamiento del sistema y el rendimiento bajo carga. Es una herramienta multiprotocolo, multilenguaje y no openSource.
-
-[Web oficial](https://www.microfocus.com/es-es/products/loadrunner-professional/overview)
-
-### NeoLoad
-
-Es una de las plataformas de prueba de rendimiento más innovadoras. Está desarrollada para automatizar el diseño, el mantenimiento y el análisis de pruebas para cumplir con los nuevos requisitos de las pruebas de carga Agile y DevOps. NeoLoad se integra con pipelines de CD, para soportar pruebas continuas de rendimiento de pruebas de componentes, pruebas de API, pruebas de preproducción y pruebas de carga de todo el sistema.
-
-[Web oficial](https://www.neotys.com/)
-
-[NeoLoad Demos](https://www.youtube.com/watch?v=x-pH5S9r9-o&list=PLdITSV_zl58pQo7rztV2j5Ccs7kEA1GPE)
-
-### Taurus
-
-Herramienta gratuita y de código abierto. Taurus amplía las capacidades de los populares marcos de pruebas funcionales y de rendimiento como JMeter, Gatling o Selenium. También es fácil de usar para la configuración, ejecución y análisis de resultados de pruebas.
-
-[Web oficial](https://gettaurus.org/)
-
-[+ info](https://www.blazemeter.com/blog/taurus-new-star-test-automation-tools-constellation/)
+[Web oficial](https://www.browserstack.com/)
 
 ---
 
@@ -416,12 +460,6 @@ Realizar una batería de pruebas sobre una API REST usando algún framework Java
   1. Hacer el login correctamente
   2. No se realiza el login y se comprueba el mensaje de error obtenido.
 - Repetir las pruebas utilizando JAVA.
-
-### Pruebas sobre aplicación móvil usando Katalon
-
-*Pasos a seguir:*
-
-Usar Katalon para automatizar un login sobre una aplicación de ejemplo. [Aquí](https://docs.katalon.com/katalon-studio/docs/testing_mobile_apps_using_katalon_studio_kobiton.html#create-mobile-automation-test-cases-using-katalon-studios-recording-utility) puedes descargar la apk de la aplicación de ejemplo e información como sobre usar Katalon para automatizar la prueba.
 
 ### Ejercicio práctico base de datos MongoDB
 
