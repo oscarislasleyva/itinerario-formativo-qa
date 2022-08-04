@@ -11,15 +11,17 @@
     - [Definición Agile Testing](#definici%C3%B3n-agile-testing)
     - [Principios del Context Driven Testing](#principios-del-context-driven-testing)
     - [Shift Left Testing](#shift-left-testing)
-  - [Testing exploratorio](#testing-exploratorio)
   - [Evaluación heurística](#evaluaci%C3%B3n-heur%C3%ADstica)
   - [Redacción de planes de pruebas](#redacci%C3%B3n-de-planes-de-pruebas)
-  - [Tipos de incidencias](#tipos-de-incidencias)
-  - [Control y seguimiento de bugs](#control-y-seguimiento-de-bugs)
-  - [API Testing](#api-testing)
+  - [Testing exploratorio](#testing-exploratorio)
   - [Unit Testing](#unit-testing)
+  - [API Testing](#api-testing)
+  - [E2E Testing](#e2e-testing)
+  - [Pruebas de regresión](#pruebas-de-regresi%C3%B3n)
   - [BDD](#bdd)
   - [Pirámide de testing ó Pirámide de Cohn](#pir%C3%A1mide-de-testing-%C3%B3-pir%C3%A1mide-de-cohn)
+  - [Tipos de incidencias](#tipos-de-incidencias)
+  - [Control y seguimiento de bugs](#control-y-seguimiento-de-bugs)
   - [Control de versiones y Git](#control-de-versiones-y-git)
 - [Ejercicios](#ejercicios)
   - [Técnicas de Prueba](#t%C3%A9cnicas-de-prueba)
@@ -115,14 +117,6 @@ La idea detrás de este principio es que no es necesario esperar a tener partes 
 
 ![ShiftLeftTesting.png](/img/iniciacion/ShiftLeftTesting.png)
 
-### Testing exploratorio
-
-Es la evolución de las pruebas manuales tradicionales. A diferencia de ellas, aquí no hay casos de prueba predefinidos a seguir, ni tampoco hay una serie de pasos predefinidos y escritos que se deban repetir. Las pruebas exploratorias se basan en el conocimiento que el tester va ganando sobre la aplicación a medida que la va probando.
-
-[+ info](https://www.javiergarzas.com/2015/01/testing-exploratorio-10-min.html)
-
-[Ejemplo de sesión de testing exploratorio sobre la aplicación de Spotify](https://www.youtube.com/watch?v=o0MXE8Onkh4)
-
 ### Evaluación heurística
 
 A la hora de enfrentarnos a las pruebas de un proyecto, en cualquiera de las fases del mismo:
@@ -155,29 +149,13 @@ Un plan de pruebas es un documento que debe recoger toda la información relativ
 
 [Ejemplo de plantilla plan de pruebas](/files/iniciacion/Informe_plan_de_pruebas.pdf)
 
-### Tipos de incidencias
+### Testing exploratorio
 
-A la hora de realizar pruebas de software y detectar incidencias, las hay de 3 tipos:
+Es la evolución de las pruebas manuales tradicionales. A diferencia de ellas, aquí no hay casos de prueba predefinidos a seguir, ni tampoco hay una serie de pasos predefinidos y escritos que se deban repetir. Las pruebas exploratorias se basan en el conocimiento que el tester va ganando sobre la aplicación a medida que la va probando.
 
-- **Error:** Acción humana que produce un resultado incorrecto.
-- **Defecto:** Presencia de un error en el software
-- **Fallo:** Manifestación física o funcional de un defecto.
+[+ info](https://www.javiergarzas.com/2015/01/testing-exploratorio-10-min.html)
 
-[+ info](https://testerhouse.com/teoria-testing/error-defecto-bug-fallo/)
-
-### Control y seguimiento de bugs
-
-En función del tipo de proyecto, es necesario establecer un ciclo de reporte y seguimiento de bugs adecuado, que permita conocer el estado del sistema en todo momento.
-
-Es importante que cada bug tenga asignada una **severidad** y un **grado de impacto**. Esto ayudará a conocer el estado real del sistema y priorizar el trabajo a la hora de corregir los bugs.
-
-[Aquí](/files/iniciacion/CicloBugs.pdf) un ejemplo del ciclo de bugs
-
-### API Testing
-
-Las pruebas de API son un tipo de pruebas de software que implica probar las interfaces de programación de aplicaciones directamente y como parte de las pruebas de integración para determinar si cumplen con las expectativas de funcionalidad, confiabilidad, rendimiento y seguridad.
-
-[+ info](https://www.youtube.com/watch?v=vOBnIR3hNfA)
+[Ejemplo de sesión de testing exploratorio sobre la aplicación de Spotify](https://www.youtube.com/watch?v=o0MXE8Onkh4)
 
 ### Unit Testing
 
@@ -186,6 +164,30 @@ Las pruebas unitarias son la base de la automatización de pruebas. Mediante ell
 Las pruebas deben centrarse en verificar el comportamiento de las clases, es decir, que nuestro código "haga lo que se espera que haga". Por ello, es importante que a la hora de realizar pruebas unitarias intentemos evitar detalles de implementación y nos centremos en la parte funcional.
 
 Técnicas como [TDD](https://es.wikipedia.org/wiki/Desarrollo_guiado_por_pruebas)(Test Driven Development), pueden ser útiles en este sentido, puesto que al escribir (y pensar) el test en primer lugar, estamos obligados a pensar de qué manera será utilizada nuestra clase y por tanto, cómo se comportará.
+
+### API Testing
+
+Las pruebas de API son un tipo de pruebas de software que implica probar las interfaces de programación de aplicaciones directamente y como parte de las pruebas de integración para determinar si cumplen con las expectativas de funcionalidad, confiabilidad, rendimiento y seguridad.
+
+[+ info](https://www.youtube.com/watch?v=vOBnIR3hNfA)
+
+### E2E Testing
+
+Las pruebas End-2-End (E2E) comprueban el funcionamiento de toda una aplicación desde la interfaz de usuario (ui), de principio a fin, cubriendo así secciones que las pruebas unitarias o de integración no cubren. Este tipo de pruebas nos garantizan que el flujo de una aplicación funciona como se esperaría ante la interacción de un usuario real.
+
+Lo más común es que estas pruebas se automaticen utilizando alguna de las herramientas que existen para ello pero también se suelen realizar manualmente sobre todo si son muy costosas de automatizar en cuanto a tiempo y recursos.
+
+[+ info](https://www.guru99.com/end-to-end-testing.html)
+
+### Pruebas de regresión
+
+Las pruebas de regresión son aquellas que se realizan para asegurarnos de que un cambio o una nueva funcionalidad no rompen la aplicación que estaba funcionando. Al realizar este tipo de pruebas, nos aseguramos de que comprobamos el códidgo que se ha modificado y se comporta como queremos y además que el cambio no rompe nada de lo que anteriormente funcionaba.
+
+Es importante que este tipo de pruebas contengan tests de los errores que se han ido detectando en la aplicación y ya se han corregido para asegurarnos de que no se vuelven a repetir.
+
+Generalmente estas pruebas se suelen automatizar ya que se realizan con una mayor frecuencia, aunque también se pueden realizar manualmente.
+
+[+ info](https://www.qalovers.com/2018/11/pruebas-regresion.html)
 
 ### BDD
 
@@ -218,6 +220,24 @@ La ventaja de este enfoque está en que las pruebas unitarias son las más rápi
 Si que es cierto que es complicado de llevar a cabo si el contexto no es favorable, con ello quiero decir, que sin una base de cultura de testing, conocimiento o estrategia, entre otras, será complicado tener un conjunto adecuado de pruebas automatizadas.
 
 [+ info](https://medium.com/@morvader/testing-iceberg-2cc7501f4e06)
+
+### Tipos de incidencias
+
+A la hora de realizar pruebas de software y detectar incidencias, las hay de 3 tipos:
+
+- **Error:** Acción humana que produce un resultado incorrecto.
+- **Defecto:** Presencia de un error en el software
+- **Fallo:** Manifestación física o funcional de un defecto.
+
+[+ info](https://testerhouse.com/teoria-testing/error-defecto-bug-fallo/)
+
+### Control y seguimiento de bugs
+
+En función del tipo de proyecto, es necesario establecer un ciclo de reporte y seguimiento de bugs adecuado, que permita conocer el estado del sistema en todo momento.
+
+Es importante que cada bug tenga asignada una **severidad** y un **grado de impacto**. Esto ayudará a conocer el estado real del sistema y priorizar el trabajo a la hora de corregir los bugs.
+
+[Aquí](/files/iniciacion/CicloBugs.pdf) un ejemplo del ciclo de bugs
 
 ### Control de versiones y Git
 
