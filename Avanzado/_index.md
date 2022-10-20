@@ -13,7 +13,7 @@
     - [Vagrant](#vagrant)
     - [Comparativa entre Docker y Vagrant](#comparativa-entre-docker-y-vagrant)
   - [Configuración de pipelines para CI y CD](#configuraci%C3%B3n-de-pipelines-para-ci-y-cd)
-    - [¿Que es un Pipeline?](#%C2%BFque-es-un-pipeline%3F)
+    - [Qué es un Pipeline](#qu%C3%A9-es-un-pipeline)
   - [Pruebas de Seguridad](#pruebas-de-seguridad)
   - [Mutation Testing](#mutation-testing)
     - [Ventajas](#ventajas)
@@ -25,10 +25,10 @@
   - [Jenkins](#jenkins)
   - [Pact](#pact)
   - [Herramientas para pruebas de seguridad](#herramientas-para-pruebas-de-seguridad)
-    - [Metasploit](#%5Bmetasploit%5D%28https%3A%2F%2Fwww.metasploit.com%2F%29)
-    - [Acunetix Web Vulnerability Scanner](#%5Bacunetix-web-vulnerability-scanner%5D%28https%3A%2F%2Fwww.acunetix.com%2Fweb-vulnerability-scanner%2F%29)
-    - [OWASP ZAP (abr. para Zed Attack Proxy)](#%5Bowasp-zap-%28abr.-para-zed-attack-proxy%29%5D%28https%3A%2F%2Fowasp.org%2Fwww-project-zap%2F%29)
-    - [Wireshark](#%5Bwireshark%5D%28https%3A%2F%2Fwww.wireshark.org%2F%29)
+    - [Metasploit](#metasploit)
+    - [Acunetix Web Vulnerability Scanner](#acunetix-web-vulnerability-scanner)
+    - [OWASP ZAP](#owasp-zap)
+    - [Wireshark](#wireshark)
 - [Ejercicios](#ejercicios)
   - [Instalación y monitorización de un cluster de Kubernetes](#instalaci%C3%B3n-y-monitorizaci%C3%B3n-de-un-cluster-de-kubernetes)
   - [Jenkins y Sonar](#jenkins-y-sonar)
@@ -155,7 +155,7 @@ En concreto, incorpora la automatización continua y el control permanente en to
 
 [+ info](https://www.redhat.com/es/topics/devops/what-is-ci-cd)
 
-#### ¿Que es un Pipeline?
+#### Qué es un Pipeline
 
 Partiendo de nuestro enfoque (ingeniería del software), es un conjunto de procesos automatizados que permiten a los desarrolladores y profesionales de DevOps compilar, construir e implementar su código de manera confiable y eficiente en sus plataformas de producción.
 No existe una regla estricta de como configurar un pipeline y las herramientas que se deben utilizar, pero los componentes más comunes son:
@@ -258,17 +258,21 @@ Es una herramienta de *contract testing* que nos permite probar la mensajería e
 
 ### Herramientas para pruebas de seguridad
 
-#### [Metasploit](https://www.metasploit.com/)
+#### Metasploit
 
 Es un proyecto de código abierto para la seguridad informática, que proporciona información acerca de vulnerabilidades de seguridad y ayuda en tests de penetración "Pentesting" y el desarrollo de firmas para sistemas de detección de intrusos.
 
 Su subproyecto más conocido es el ***Metasploit Framework***, una herramienta para desarrollar y ejecutar exploits contra una máquina remota. Otros subproyectos importantes son las bases de datos de opcodes (códigos de operación), un archivo de shellcodes, e investigación sobre seguridad. Inicialmente fue creado utilizando el lenguaje de programación de scripting *Perl* aunque actualmente el Metasploit Framework ha sido escrito de nuevo completamente en el lenguaje Ruby.
 
-#### [Acunetix Web Vulnerability Scanner](https://www.acunetix.com/web-vulnerability-scanner/)
+[+ info](https://www.metasploit.com/)
+
+#### Acunetix Web Vulnerability Scanner
 
 Es una herramienta que será capaz de escanear sitios web en busca de posibles fallos de seguridad que puedan poner en peligro la integridad de la página publicada en Internet. Esta aplicación ejecuta una serie de pruebas, totalmente configurables por el usuario, para identificar las vulnerabilidades tanto en la programación de la página como en la configuración del servidor
 
-#### [OWASP ZAP (abr. para Zed Attack Proxy)](https://owasp.org/www-project-zap/)
+[+ info](https://www.acunetix.com/web-vulnerability-scanner/)
+
+#### OWASP ZAP
 
 Es un escáner de seguridad web de código abierto. Pretende ser utilizado como una aplicación de seguridad y como una herramienta profesional para pruebas de penetración.
 
@@ -276,7 +280,9 @@ Cuándo se usa como servidor proxy permite a los usuarios manipular todo el trá
 
 Esta herramientas es multiplataforma, pues se ha escrito en Java y está disponible en sistemas tales como Windows, Linux y macOS.
 
-#### [Wireshark](https://www.wireshark.org/)
+[+ info](https://owasp.org/www-project-zap/)
+
+#### Wireshark
 
 Es un analizador de protocolos utilizado para realizar análisis y solucionar problemas en redes de comunicaciones, para desarrollo de software y protocolos, y como una herramienta didáctica. Cuenta con todas las características estándar de un analizador de protocolos.
 
@@ -285,6 +291,8 @@ La funcionalidad que provee es similar a la de *tcpdump*, pero añade una interf
 Permite examinar datos de un archivo de captura salvado en disco. Se puede analizar la información capturada, a través de los detalles y cabeceras de cada paquete. Wireshark incluye un completo lenguaje para filtrar lo que queremos ver y la habilidad de mostrar el flujo reconstruido de una sesión de TCP.
 
 Es software libre y se ejecuta sobre la mayoría de sistemas operativos Unix y compatibles, incluyendo Linux, Solaris, FreeBSD, NetBSD, OpenBSD, Android, y macOS , así como en Microsoft Windows.
+
+[+ info](https://www.wireshark.org/)
 
 ---
 

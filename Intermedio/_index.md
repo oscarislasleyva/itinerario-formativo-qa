@@ -21,12 +21,12 @@
   - [Herramientas para pruebas de backend](#herramientas-para-pruebas-de-backend)
     - [RestAssured](#restassured)
     - [KarateDSL](#karatedsl)
-  - [Herramientas para pruebas web (e2e)](#herramientas-para-pruebas-web-%28e2e%29)
+  - [Herramientas para pruebas web](#herramientas-para-pruebas-web)
     - [Selenium](#selenium)
     - [Cypress](#cypress)
     - [TestCafé](#testcaf%C3%A9)
     - [Playwright](#playwright)
-    - [Protractor (Deprecada)](#protractor-%28deprecada%29)
+    - [Protractor - Deprecada](#protractor---deprecada)
   - [Herramientas para pruebas de móviles](#herramientas-para-pruebas-de-m%C3%B3viles)
     - [Appium](#appium)
     - [Espresso](#espresso)
@@ -211,7 +211,7 @@ En el caso de KarateDSL, es una herramienta de código abierto que nos permite e
 
 [Web oficial](https://github.com/intuit/karate)
 
-### Herramientas para pruebas web (e2e)
+### Herramientas para pruebas web
 
 #### Selenium
 
@@ -237,7 +237,7 @@ Playwright es una biblioteca de node.js para automatizar pruebas e2e en los prin
 
 [Web oficial](https://playwright.dev/)
 
-#### Protractor (Deprecada)
+#### Protractor - Deprecada
 
 Protractor utiliza WebDriver para controlar el navegador y está escrita en NodeJS. Se utiliza el lenguaje JavaScript para escribir los test. Se trata de un framework para pruebas e2e sobre aplicaciones escritas en AngularJS, aunque no está limitado solo a este framework en particular.
 

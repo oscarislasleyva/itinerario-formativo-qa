@@ -396,6 +396,9 @@ Resolver las siguientes Katas utilizando ***TDD (Test driven development)*** con
 - [Curso Udemy - ISTQB foundation level practice exam](https://sngular.udemy.com/course/istqb-foundation-level-practice-exams/)
 - [Curso Udemy - SoapUI](https://sngular.udemy.com/course/webservices-testing-with-soap-ui/)
 - [Iniciación API Testing](https://atejeda-qa.medium.com/api-testing-y-no-morir-en-el-intento-1ra-parte-2d37e8929b5a)
+- [Jira Xray Academy](https://academy.getxray.app/)
+- [Jira Xray Documentation](https://docs.getxray.app/display/XRAYCLOUD/Getting+started)
+- [Jira Xray Tutorial](https://www.youtube.com/playlist?list=PLYtAmt7gziDUcahuiZXh5QJw_tSAdEBwm)
 
 ---
 
